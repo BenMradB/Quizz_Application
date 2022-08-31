@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quizz Application</title>
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="./css/all.min.css">
+        <!-- Main Application CSS File -->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <div class="pop-up success hidden">
+            <span>
+                Gongratulation You Get 
+                <span class="r-answers"></span>
+                From
+                <span class="all-questions"></span>
+                Question
+                <div class="grade"></div>
+            </span>
+        </div>
+        <div class="pop-up fail hidden">
+            <span>
+                OOPS :( You Get 
+                <span class="r-answers"></span>
+                From
+                <span class="all-questions"></span>
+                Question
+                <div class="grade"></div>
+            </span>
+        </div>
+        <div class="quizz-app">
+            <div class="container">
+                <div class="category">
+                    <div>Category : <span class="category-name">JavaScript</span> Quizz</div>
+                    <div class="counter">
+                    Question <span class="current-question"></span> Of <span class="all-questions"></span> 
+                    </div>
+                </div>
+
+                <div class="quizz-area">
+                    <div class="question">
+                        <div>
+                            <span class="current-question q-number"></span>
+                        </div>
+                        <h2 class="question-text"></h2>
+                    </div>
+                    <div class="answers"></div>                 
+                </div>
+
+                <div class="footer">
+                    <button type="submit" class="next">Next Question</button>
+                </div>
+            </div>
+        </div>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
